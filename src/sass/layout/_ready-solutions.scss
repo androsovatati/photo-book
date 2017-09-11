@@ -1,0 +1,96 @@
+.ready-solutions {
+  &__title {
+    @extend .opensans-regular;
+    margin-top: 70px;
+    color: $gray-lighten;
+    font-size: 60px;
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    width: $container-width;
+    margin: 0 auto;
+    padding: 75px 0;
+  }
+}
+
+.ready-solution {
+  position: relative;
+  width: $item-width;
+  box-sizing: border-box;
+  border: 5px solid $primary-color;
+  border-radius: 10px;
+
+  &__header {
+    @extend .opensans-regular;
+    background: $primary-color;
+    color: $black;
+    font-size: 36px;
+    line-height: 115px;
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 230px;
+  }
+
+  &__options li {
+    @extend .ptsans-regular;
+    position: relative;
+    height: 31px;
+    margin-left: 30px;
+    font-size: 18px;
+    line-height: 31px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -30px;
+      top: 5px;
+      width: 20px;
+      height: 20px;
+      background: url($img-path + 'checkbox.png');
+    }
+  }
+
+  &__price {
+    @extend .pfagora-light;
+    font-size: 60px;
+    text-align: center;
+  }
+
+  &__footer {
+    @extend .opensans-light;
+    background: $primary-color;
+    color: $black;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  &__bestseller::before {
+    @extend .opensans-bold;
+    content: 'bestseller';
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    width: 150px;
+    height: 0;
+    margin-left: -100px;
+    border-bottom: 22px solid $primary-color;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    color: $accent-color;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 32px;
+    letter-spacing: 1px;
+  }
+}

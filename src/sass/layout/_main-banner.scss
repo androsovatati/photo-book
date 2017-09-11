@@ -1,0 +1,44 @@
+.main-banner {
+    @extend .opensans-light;
+    min-height: 480px;
+    height: auto;
+    width: 100%;
+    padding: 33px 0;
+    background-image: url($img-path + 'main-banner.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__title {
+        font-size: 56px;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+    &__subtitle {
+        font-size: 24px;
+        text-align: center;
+    }
+    &__button {
+        margin-top: 76px;
+    }
+    &__button a {
+        @extend .opensans-regular;
+        display: block;
+        width: 374px;
+        margin: 0 auto;
+        padding: 20px 0;
+        border: 1px solid $gray-extra-darken;
+        border-radius: $border-radius-small;
+        color: $gray;
+        font-size: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 1px;
+
+        &:hover {
+            background: $black-alpha;
+        }
+    }
+}

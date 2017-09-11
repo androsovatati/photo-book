@@ -1,0 +1,102 @@
+.testimonials {
+  height: 765px;
+  margin-top: 37px;
+  background-image: url($img-path + 'testimonials.jpg');
+  background-position: center center;
+  background-size: cover;
+
+  &__wrapper {
+    width: $container-width;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+
+  &__column {
+    width: 50%;
+  }
+
+  &__title {
+    @extend .opensans-light;
+    font-size: 55px;
+    color: $gray-lighten;
+    text-transform: capitalize;
+  }
+
+  &__button {
+    margin-top: 90px;
+  }
+  &__button a {
+    @extend .opensans-regular;
+    display: block;
+    width: 374px;
+    margin: 0 auto;
+    padding: 20px 0;
+    border: 1px solid $gray-extra-darken;
+    border-radius: $border-radius-small;
+    color: $gray;
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+
+    &:hover {
+      background: $black-alpha;
+    }
+  }
+}
+
+.testimonial {
+  &__header {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  &__photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: url($img-path + 'john_doe.jpg');
+  }
+
+  &__author {
+    padding-left: 20px;
+  }
+
+  &__full-name {
+    @extend .opensans-bold;
+    font-size: 30px;
+    color: $gray-darken;
+    line-height: 1.4;
+  }
+
+  &__profession {
+    @extend .opensans-light;
+    font-size: 18px;
+    color: $black;
+    line-height: 1.4;
+  }
+
+  &__text {
+    @extend .opensans-light;
+    color: $gray-darken;
+    line-height: 1.5;
+    margin-top: 5px;
+
+    & p + p {
+      margin-top: 10px;
+    }
+
+    &-more {
+      @extend .opensans-semibold;
+      text-size: 16px;
+      padding-top: 35px;
+      text-align: right;
+      color: $black;
+      cursor: pointer;
+    }
+  }
+
+}

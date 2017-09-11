@@ -1,0 +1,37 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: $header-height;
+
+    &__main-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        height: $header-height;
+        width: $container-width;
+        padding: 0 25px;
+    }
+
+    &__phone a {
+        @extend .opensans-regular;
+        border-radius: $border-radius;
+        padding: 8px 40px;
+        background: $primary-color;
+        color: $gray;
+        letter-spacing: 1px;
+        text-decoration: none;
+    }
+}
+
+.menu__icon {
+    margin-right: 37px;
+    width: 25px;
+    height: 18px;
+}
+.sign-in__icon {
+    margin-left: 30px;
+    width: 29px;
+    height: 34px;
+}
